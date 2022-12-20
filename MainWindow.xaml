@@ -1,0 +1,37 @@
+﻿<Window x:Class="TextRenPyFinder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextRenPyFinder" 
+        xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1500" SizeChanged="MainWindow_OnSizeChanged">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBox Name="Path" Width="600"></TextBox>
+            <Button Name="PathFind" Click="PathFind_OnClick">Обзор</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBox Name="FindText" Width="300"></TextBox>
+            <Button Name="Find" Click="Find_OnClick" IsDefault="True">Поиск</Button>
+            <Button Name="FindNext" Click="FindNext_OnClick">Далее</Button>
+        </StackPanel>
+        <TextBox Grid.Row="2" Name="FileName" Width="900"></TextBox>
+        <avalonedit:TextEditor Grid.Row="3" Width="200"
+                    Name="avEditor" WordWrap="True"
+                    Background="White"
+                    ShowLineNumbers="True"
+                    IsReadOnly="True"
+                    Foreground="Black" MouseDown="AvEditor_OnMouseDown">
+        </avalonedit:TextEditor>
+        <TextBox Grid.Row="4" Name="Status" Width="900"></TextBox>
+    </Grid>
+</Window>
