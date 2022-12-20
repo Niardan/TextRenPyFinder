@@ -21,8 +21,8 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <TextBox Name="FindText" Width="300"></TextBox>
-            <Button Name="Find" Click="Find_OnClick" IsDefault="True">Поиск</Button>
-            <Button Name="FindNext" Click="FindNext_OnClick">Далее</Button>
+            <Button Name="Find" Click="Find_OnClick" >Поиск</Button>
+            <Button Name="FindNext" Click="FindNext_OnClick" IsDefault="True">Далее</Button>
         </StackPanel>
         <TextBox Grid.Row="2" Name="FileName" Width="900"></TextBox>
         <avalonedit:TextEditor Grid.Row="3" Width="200"
