@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Monaco.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.2.0.78" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Monaco.ttf" />
   </ItemGroup>
 
 </Project>

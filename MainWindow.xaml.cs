@@ -33,10 +33,7 @@ namespace TextRenPyFinder
             InitializeComponent();
             this.avEditor.PreviewMouseWheel += new System.Windows.Input.MouseWheelEventHandler(textEditor_PreviewMouseWheel);
             this.KeyDown += AvEditorOnKeyDown;
-            var path = @"x:\Game\Photo_Hunt\Rus\PhotoHunt-0.15.1-Rus+mod\game\script_loc\loc43_nurse_office.rpy";
-
-            _finder = new Finder(@"x:/Game/Photo_Hunt/Rus/game");
-
+            
             this.avEditor.FontSize = 30;
 
             //if (f.FindText("Я тоже волнуюсь".ToLowerInvariant(), out var finded))
